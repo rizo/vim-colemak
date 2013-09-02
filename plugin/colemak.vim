@@ -6,6 +6,8 @@
 "
 "   Refer to ../README.md for keymap explanations.
 " }
+
+
 " Require Vim >=7.0 {
     if v:version < 700 | echohl WarningMsg | echo "colemak.vim: You need Vim version 7.0 or later." | echohl None | finish | endif
 " }
@@ -18,10 +20,10 @@
 " }
 " Turbo navigation {
     " Works with counts, see ":help complex-repeat"
-    nnoremap <silent> H @='5h'<CR>|xnoremap <silent> H @='5h'<CR>|onoremap <silent> H @='5h'<CR>|
-    nnoremap <silent> N @='5gj'<CR>|xnoremap <silent> N @='5gj'<CR>|onoremap <silent> N @='5gj'<CR>|
-    nnoremap <silent> E @='5gk'<CR>|xnoremap <silent> E @='5gk'<CR>|onoremap <silent> E @='5gk'<CR>|
-    nnoremap <silent> I @='5l'<CR>|xnoremap <silent> I @='5l'<CR>|onoremap <silent> I @='5l'<CR>|
+    nnoremap <silent> <A-h> @='5h'<CR>  |xnoremap <silent> <A-h> @='5h'<CR>  |onoremap <silent> <A-h> @='5h'<CR> |
+    nnoremap <silent> <A-n> @='5gj'<CR> |xnoremap <silent> <A-n> @='5gj'<CR> |onoremap <silent> <A-n> @='5gj'<CR>|
+    nnoremap <silent> <A-e> @='5gk'<CR> |xnoremap <silent> <A-e> @='5gk'<CR> |onoremap <silent> <A-e> @='5gk'<CR>|
+    nnoremap <silent> <A-i> @='5l'<CR>  |xnoremap <silent> <A-i> @='5l'<CR>  |onoremap <silent> <A-i> @='5l'<CR> |
 " }
 " Words forward/backwards {
     " l/L = back word/WORD
@@ -73,8 +75,6 @@
     " f/F are unchanged
     nnoremap p t|xnoremap p t|onoremap p t|
     nnoremap P T|xnoremap P T|onoremap P T|
-    nnoremap b ;|xnoremap b ;|onoremap b ;|
-    nnoremap B ,|xnoremap B ,|onoremap B ,|
     nnoremap k n|xnoremap k n|onoremap k n|
     nnoremap K N|xnoremap K N|onoremap K N|
 " }
@@ -93,9 +93,9 @@
     nnoremap gL L|xnoremap gL L|
 " }
 " Window handling {
-    nnoremap <C-W>h <C-W>h|xnoremap <C-W>h <C-W>h|
-    nnoremap <C-W>n <C-W>j|xnoremap <C-W>n <C-W>j|
-    nnoremap <C-W>e <C-W>k|xnoremap <C-W>e <C-W>k|
-    nnoremap <C-W>i <C-W>l|xnoremap <C-W>i <C-W>l|
+    nnoremap <C-h> <C-W>h|xnoremap <C-W>h <C-W>h|
+    nnoremap <C-n> <C-W>j|xnoremap <C-W>n <C-W>j|
+    nnoremap <C-e> <C-W>k|xnoremap <C-W>e <C-W>k|
+    nnoremap <C-i> <C-W>l|xnoremap <C-W>i <C-W>l|
 " }
 

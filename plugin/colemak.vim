@@ -20,10 +20,10 @@
 " }
 " Turbo navigation {
     " Works with counts, see ":help complex-repeat"
-    nnoremap <silent> <A-h> @='5h'<CR>  |xnoremap <silent> <A-h> @='5h'<CR>  |onoremap <silent> <A-h> @='5h'<CR> |
-    nnoremap <silent> <A-n> @='5gj'<CR> |xnoremap <silent> <A-n> @='5gj'<CR> |onoremap <silent> <A-n> @='5gj'<CR>|
-    nnoremap <silent> <A-e> @='5gk'<CR> |xnoremap <silent> <A-e> @='5gk'<CR> |onoremap <silent> <A-e> @='5gk'<CR>|
-    nnoremap <silent> <A-i> @='5l'<CR>  |xnoremap <silent> <A-i> @='5l'<CR>  |onoremap <silent> <A-i> @='5l'<CR> |
+    nnoremap <silent> H @='5h'<CR>  |xnoremap <silent> H @='5h'<CR>  |onoremap <silent> H @='5h'<CR> |
+    nnoremap <silent> N @='5gj'<CR> |xnoremap <silent> N @='5gj'<CR> |onoremap <silent> N @='5gj'<CR>|
+    nnoremap <silent> E @='5gk'<CR> |xnoremap <silent> E @='5gk'<CR> |onoremap <silent> E @='5gk'<CR>|
+    nnoremap <silent> I @='5l'<CR>  |xnoremap <silent> I @='5l'<CR>  |onoremap <silent> I @='5l'<CR> |
 " }
 " Words forward/backwards {
     " l/L = back word/WORD
@@ -50,7 +50,7 @@
     nnoremap ww cc|
 " }
 " Cut/copy/paste {
-    nnoremap x x|xnoremap x d|
+    
     nnoremap c y|xnoremap c y|
     nnoremap v gP|xnoremap v gP|
     nnoremap X dd|xnoremap X d|
@@ -81,6 +81,7 @@
 " inneR text objects {
     " e.g. dip (delete inner paragraph) is now drp
     onoremap r i
+    vnoremap r i
 " }
 " Folds, etc. {
     nnoremap j z|xnoremap j z|

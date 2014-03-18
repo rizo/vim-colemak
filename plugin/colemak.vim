@@ -49,14 +49,16 @@
     nnoremap W C|xnoremap W C|
     nnoremap ww cc|
 " }
-" Cut/copy/paste {
-    
-    nnoremap c y|xnoremap c y|
-    nnoremap v gP|xnoremap v gP|
-    nnoremap X dd|xnoremap X d|
-    nnoremap C yy|xnoremap C y|
-    nnoremap V p|xnoremap V p|
+
+
+" Cut/copy/paste {    
+    nnoremap c  y|xnoremap c  y|
+    nnoremap V gP|xnoremap v gP|
+    nnoremap X dd|xnoremap X  d|
+    nnoremap C yy|xnoremap C  y|
+    nnoremap v  p|xnoremap V  p|
 " }
+
 " Undo/redo {
     nnoremap z u|xnoremap z :<C-U>undo<CR>|
     nnoremap gz U|xnoremap gz :<C-U>undo<CR>|
